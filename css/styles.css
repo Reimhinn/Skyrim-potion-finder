@@ -1,6 +1,6 @@
 #add-effect {
-  width: 21px;
-  height: 21px;
+  width: 150px;
+  height: 40px;
   cursor: pointer;
 }
 
@@ -8,25 +8,61 @@
   margin-left: -3px;
 }
 
-.li-flex {
+.flex {
   display: flex;
 }
 
 .delete-cross {
+
   padding-top: 5px;
   padding-left: 8px;
   font-size: 12px;
   color: rgb(121, 0, 0);
   cursor: pointer;
-  display: none;
 }
 
-.li-flex:hover .delete-cross {
+/* .li-flex:hover .delete-cross {
   display: block;
-}
+} */
 
-.effect-list {
-  width: 200px;
+.effect-select  {
+  width: 100px;
+  height: 35px;
   background-color: blanchedalmond;
   list-style: none;
+  text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
+
+.effect-block, .finding-block, .ingredient-block {
+  border: 1px solid black;
+}
+
+.effect-block, .ingredient-block {
+  height: 37vh;
+  overflow-y: scroll;
+}
+
+
+
+.ingredient-block {
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+
+.main-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.option-flex {
+  display: flex;
+  justify-content: space-evenly;
 }
